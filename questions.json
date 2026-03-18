@@ -32,13 +32,14 @@
   },
   {
     "id": 4,
-    "question": "Consider... A1: in a multi-processor environment, non-determinism can cause a sequential program to yield different results in different executions that take the same input data. A2: in a single-processor environment, non-determinism can cause a concurrent program to yield different results in different executions that take the same input data. A3: in a multi-processor environment, non-determinism can result in a concurrent program showing interference in some executions and not showing it in some others even when all executions take the same input data.",
+    "question": "Consider...",
     "answers": [
       {"id": 1, "answer": "A1, A2 and A3 are true", "correct": false},
       {"id": 2, "answer": "Only A3 is true", "correct": false},
       {"id": 3, "answer": "Only A2 and A3 are true", "correct": true},
       {"id": 4, "answer": "All of them are false", "correct": false}
-    ]
+    ],
+    "imgfile":"./images/tema1ex4.png"
   },
   {
     "id": 5,
@@ -122,13 +123,14 @@
   },
   {
     "id": 13,
-    "question": "Regarding test & set... A1: The test & set variable has an owner and only this owner can change its value A2: The test and set variable has an owner and only the owner can check its value",
+    "question": "Regarding test & set...",
     "answers": [
       {"id": 1, "answer": "Both A1 and A2 are true", "correct": false},
       {"id": 2, "answer": "Both A1 and A2 are false", "correct": true},
       {"id": 3, "answer": "A1 is true but A2 is false", "correct": false},
       {"id": 4, "answer": "A1 is false but A2 is true", "correct": false}
-    ]
+    ],
+    "imgfile":"./images/tema1ex13.png"
   },
   {
     "id": 14,
@@ -172,13 +174,14 @@
   },
   {
     "id": 18,
-    "question": "How many of the following statements are true A1: In multi-processor environments, concurrent processes always overlap their instructions. A2: in single-processor environments, concurrent processes may under certain circumstances overlap their instructions. A3: in single-processor environments, concurrent programs behave deterministically.",
+    "question": "How many of the following statements are true?",
     "answers": [
       {"id": 1, "answer": "0", "correct": true},
       {"id": 2, "answer": "1", "correct": false},
       {"id": 3, "answer": "2", "correct": false},
       {"id": 4, "answer": "3", "correct": false}
-    ]
+    ],
+    "imgfile":"./images/tema1ex18.png"
   },
   {
     "id": 19,
@@ -192,13 +195,14 @@
   },
   {
     "id": 20,
-    "question": "How many of the following are assumptions in the Critical Section Problem: The scheduler follows a policy that gives each process an opportunity (at least) to be executed. Any process will request to enter its critical section at least once. Any process executing its critical section will exit it before other processes request to enter their critical sections. At any one time, only one process is executing its non-critical section",
+    "question": "How many of the following are assumptions in the Critical Section Problem:",
     "answers": [
       {"id": 1, "answer": "0", "correct": false},
       {"id": 2, "answer": "1", "correct": true},
       {"id": 3, "answer": "2", "correct": false},
       {"id": 4, "answer": "3", "correct": false}
-    ]
+    ],
+    "imgfile":"./images/tema1ex20.png"
   },
   {
     "id": 21,
@@ -212,23 +216,25 @@
   },
   {
     "id": 22,
-    "question": "How many of the following invocations ALWAYS block the invoker: Invoking wait (acquire in Java) on a semaphore. Invoking waitC (await in Java) on a monitor condition. Invoking lock on a lock. Invoking compareAndSet in an AtomicInteger",
+    "question": "How many of the following invocations ALWAYS block the invoker:",
     "answers": [
       {"id": 1, "answer": "0", "correct": false},
       {"id": 2, "answer": "1", "correct": true},
       {"id": 3, "answer": "2", "correct": false},
       {"id": 4, "answer": "More than 2", "correct": false}
-    ]
+    ],
+    "imgfile":"./images/tema1ex22.png"
   },
   {
     "id": 23,
-    "question": "How many of the following operations may have no effect whatsoever: Invoking signal (acquire in Java) on a general semaphore. Invoking signalC (signal in Java) on a monitor condition. Invoking unlock on a lock",
+    "question": "How many of the following operations may have no effect whatsoever:",
     "answers": [
       {"id": 1, "answer": "0", "correct": false},
       {"id": 2, "answer": "1", "correct": true},
       {"id": 3, "answer": "2", "correct": false},
       {"id": 4, "answer": "3", "correct": false}
-    ]
+    ],
+    "imgfile":"./images/tema1ex23.png"
   },
   {
     "id": 24,
@@ -242,23 +248,25 @@
   },
   {
     "id": 25,
-    "question": "Which of the following assertions is/are true? A1: in a single-processor environment, concurrent processes may overlap their instructions. A2: in a multi-processor environment, concurrent processes may interleave their instructions. A3: in a multi-processor environment, concurrent processes always overlap their instructions.",
+    "question": "Which of the following assertions is/are true?",
     "answers": [
       {"id": 1, "answer": "All of them.", "correct": false},
       {"id": 2, "answer": "A1 and A2", "correct": false},
       {"id": 3, "answer": "A2 and A3", "correct": false},
       {"id": 4, "answer": "Only A2", "correct": true}
-    ]
+    ],
+    "imgfile":"./images/tema1ex25.png"
   },
   {
     "id": 26,
-    "question": "Which of the following assertions is/are true? A1: the concurrent update problem is an example of starvation. A2: for a scheduler to be fair it must prioritize processes that have been waiting the longest time. A3: Mutual Exclusion is a type of serialization.",
+    "question": "Which of the following assertions is/are true?",
     "answers": [
       {"id": 1, "answer": "The three of them", "correct": false},
       {"id": 2, "answer": "None", "correct": true},
       {"id": 3, "answer": "A1 and A3", "correct": false},
       {"id": 4, "answer": "Only A3", "correct": false}
-    ]
+    ],
+    "imgfile":"./images/tema1ex26.png"
   },
   {
     "id": 27,
@@ -319,6 +327,17 @@
       {"id": 3, "answer": "Only the skeleton and the client.", "correct": false},
       {"id": 4, "answer": "None of the above", "correct": true}
     ]
+  },
+  {
+    "id": 33,
+    "question": "Consider the following operations on objects that can be used as synchronizers. Which of them can end up in an error because the state of the object does not allow the operation?",
+    "answers": [
+      {"id": 1, "answer": "Only O3", "correct": false},
+      {"id": 2, "answer": "Only O2", "correct": true},
+      {"id": 3, "answer": "O2 and O4", "correct": false},
+      {"id": 4, "answer": "O1 and O4", "correct": false}
+    ],
+    "imgfile":"./images/tema1ex33.png"
   }
     ]
 }
