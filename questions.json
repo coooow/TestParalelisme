@@ -1,0 +1,324 @@
+{
+    "tema1":[
+  {
+    "id": 1,
+    "question": "Which is true?",
+    "answers": [
+      {"id": 1, "answer": "In a single-processor environment, concurrent processes may overlap their instructions.", "correct": false},
+      {"id": 2, "answer": "In a multi-processor environment, concurrent processes may interleave their instructions.", "correct": true},
+      {"id": 3, "answer": "In a multi-processor environment, concurrent processes always overlap their instructions.", "correct": false},
+      {"id": 4, "answer": "None of the above is true", "correct": false}
+    ]
+  },
+  {
+    "id": 2,
+    "question": "\"Some tasks must finish before others start\" refers to... (choose best)",
+    "answers": [
+      {"id": 1, "answer": "Critical section.", "correct": false},
+      {"id": 2, "answer": "Serialization.", "correct": true},
+      {"id": 3, "answer": "Mutual Exclusion.", "correct": false},
+      {"id": 4, "answer": "Concurrency.", "correct": false}
+    ]
+  },
+  {
+    "id": 3,
+    "question": "\"The scheduler is fair\" means",
+    "answers": [
+      {"id": 1, "answer": "All processes receive the same amount of cpu-time.", "correct": false},
+      {"id": 2, "answer": "All processes having the same priority receive the same amount of cpu-time.", "correct": false},
+      {"id": 3, "answer": "There is an upper bound to the time a process is \"ready\" but not \"running\"", "correct": true},
+      {"id": 4, "answer": "None of the above", "correct": false}
+    ]
+  },
+  {
+    "id": 4,
+    "question": "Consider... A1: in a multi-processor environment, non-determinism can cause a sequential program to yield different results in different executions that take the same input data. A2: in a single-processor environment, non-determinism can cause a concurrent program to yield different results in different executions that take the same input data. A3: in a multi-processor environment, non-determinism can result in a concurrent program showing interference in some executions and not showing it in some others even when all executions take the same input data.",
+    "answers": [
+      {"id": 1, "answer": "A1, A2 and A3 are true", "correct": false},
+      {"id": 2, "answer": "Only A3 is true", "correct": false},
+      {"id": 3, "answer": "Only A2 and A3 are true", "correct": true},
+      {"id": 4, "answer": "All of them are false", "correct": false}
+    ]
+  },
+  {
+    "id": 5,
+    "question": "The concurrent update problem is an example of",
+    "answers": [
+      {"id": 1, "answer": "Mutual exclusion", "correct": false},
+      {"id": 2, "answer": "Serialization", "correct": false},
+      {"id": 3, "answer": "Interference", "correct": true},
+      {"id": 4, "answer": "Starvation", "correct": false}
+    ]
+  },
+  {
+    "id": 6,
+    "question": "th1 and th2 are Java threads...",
+    "answers": [
+      {"id": 1, "answer": "th1 can stop th2 invoking th2.stop().", "correct": false},
+      {"id": 2, "answer": "th1 can put th2 to sleep invoking th2.sleep(time).", "correct": false},
+      {"id": 3, "answer": "th1 can suggest th2 to yield the processor invoking th2.yield().", "correct": false},
+      {"id": 4, "answer": "None of the above is true", "correct": true}
+    ]
+  },
+  {
+    "id": 7,
+    "question": "Signalling a general semaphore when no process is waiting on it...",
+    "answers": [
+      {"id": 1, "answer": "Never has an effect (= nothing happens)", "correct": false},
+      {"id": 2, "answer": "Always has an effect and never generates an error", "correct": true},
+      {"id": 3, "answer": "Always generates an error", "correct": false},
+      {"id": 4, "answer": "Sometimes has an effect and sometimes has no effect at all.", "correct": false}
+    ]
+  },
+  {
+    "id": 8,
+    "question": "A lock...",
+    "answers": [
+      {"id": 1, "answer": "Can only be acquired by the owner but can be released by any process", "correct": false},
+      {"id": 2, "answer": "Can be acquired and released by any process", "correct": false},
+      {"id": 3, "answer": "Can be acquired by any process but can only be released by the owner", "correct": true},
+      {"id": 4, "answer": "None of the above", "correct": false}
+    ]
+  },
+  {
+    "id": 9,
+    "question": "Pooling...",
+    "answers": [
+      {"id": 1, "answer": "May increase efficiency by avoiding frequent creation and destruction of threads", "correct": true},
+      {"id": 2, "answer": "May increase efficiency by managing shared variables and/or message passing", "correct": false},
+      {"id": 3, "answer": "Avoids interference by enforcing synchronization policies", "correct": false},
+      {"id": 4, "answer": "None of the above", "correct": false}
+    ]
+  },
+  {
+    "id": 10,
+    "question": "Mutual exclusion is an instance of... (choose best)",
+    "answers": [
+      {"id": 1, "answer": "Indeterminism", "correct": false},
+      {"id": 2, "answer": "Interference", "correct": false},
+      {"id": 3, "answer": "Communication", "correct": false},
+      {"id": 4, "answer": "Synchronization", "correct": true}
+    ]
+  },
+  {
+    "id": 11,
+    "question": "\"Once a process has requested to enter the critical section, there's a maximum amount of time it will have to wait until the request is granted \"",
+    "answers": [
+      {"id": 1, "answer": "This is a correctness property of the critical section problem known as \"bounded waiting\"", "correct": true},
+      {"id": 2, "answer": "This is a correctness property of the critical section problem known as \"progress property\"", "correct": false},
+      {"id": 3, "answer": "This is a correctness property of the critical section problem known as \"freedom from starvation\"", "correct": false},
+      {"id": 4, "answer": "None of the above", "correct": false}
+    ]
+  },
+  {
+    "id": 12,
+    "question": "Regarding the critical section problem, which assumption is true",
+    "answers": [
+      {"id": 1, "answer": "A process may stay forever in its non-critical section", "correct": true},
+      {"id": 2, "answer": "A variable used in the protocols can also be used in the non-critical section", "correct": false},
+      {"id": 3, "answer": "The scheduler gives the same number of opportunities to each process", "correct": false},
+      {"id": 4, "answer": "A process may crash while executing the post-protocol", "correct": false}
+    ]
+  },
+  {
+    "id": 13,
+    "question": "Regarding test & set... A1: The test & set variable has an owner and only this owner can change its value A2: The test and set variable has an owner and only the owner can check its value",
+    "answers": [
+      {"id": 1, "answer": "Both A1 and A2 are true", "correct": false},
+      {"id": 2, "answer": "Both A1 and A2 are false", "correct": true},
+      {"id": 3, "answer": "A1 is true but A2 is false", "correct": false},
+      {"id": 4, "answer": "A1 is false but A2 is true", "correct": false}
+    ]
+  },
+  {
+    "id": 14,
+    "question": "In concurrent programs, the absence of starvation...",
+    "answers": [
+      {"id": 1, "answer": "Is a safety property", "correct": false},
+      {"id": 2, "answer": "Is a liveness property", "correct": true},
+      {"id": 3, "answer": "Is a mutual exclusions property", "correct": false},
+      {"id": 4, "answer": "None of the above", "correct": false}
+    ]
+  },
+  {
+    "id": 15,
+    "question": "Which of the following is not a necessary condition for deadlock",
+    "answers": [
+      {"id": 1, "answer": "Incremental acquisition", "correct": false},
+      {"id": 2, "answer": "Mutual exclusion", "correct": false},
+      {"id": 3, "answer": "Freedom from interference", "correct": true},
+      {"id": 4, "answer": "None of the above (all three are necessary conditions for deadlock)", "correct": false}
+    ]
+  },
+  {
+    "id": 16,
+    "question": "An asynchronous channel",
+    "answers": [
+      {"id": 1, "answer": "Can block the receiver but may never block the sender", "correct": true},
+      {"id": 2, "answer": "Can block the sender but may never block the receiver", "correct": false},
+      {"id": 3, "answer": "Can block both the sender and the receiver", "correct": false},
+      {"id": 4, "answer": "Can neither block the sender nor the receiver", "correct": false}
+    ]
+  },
+  {
+    "id": 17,
+    "question": "Java sockets are an implementation of",
+    "answers": [
+      {"id": 1, "answer": "One-way synchronous channels", "correct": false},
+      {"id": 2, "answer": "One-way asynchronous channels", "correct": false},
+      {"id": 3, "answer": "Two-way synchronous channels", "correct": false},
+      {"id": 4, "answer": "Two-way asynchronous channels", "correct": true}
+    ]
+  },
+  {
+    "id": 18,
+    "question": "How many of the following statements are true A1: In multi-processor environments, concurrent processes always overlap their instructions. A2: in single-processor environments, concurrent processes may under certain circumstances overlap their instructions. A3: in single-processor environments, concurrent programs behave deterministically.",
+    "answers": [
+      {"id": 1, "answer": "0", "correct": true},
+      {"id": 2, "answer": "1", "correct": false},
+      {"id": 3, "answer": "2", "correct": false},
+      {"id": 4, "answer": "3", "correct": false}
+    ]
+  },
+  {
+    "id": 19,
+    "question": "\"Certain parts of the code cannot overlap their instructions\" refers to... (choose best, if any)",
+    "answers": [
+      {"id": 1, "answer": "Deadlock avoidance", "correct": false},
+      {"id": 2, "answer": "Serialization", "correct": false},
+      {"id": 3, "answer": "Mutual Exclusion.", "correct": true},
+      {"id": 4, "answer": "None of the above", "correct": false}
+    ]
+  },
+  {
+    "id": 20,
+    "question": "How many of the following are assumptions in the Critical Section Problem: The scheduler follows a policy that gives each process an opportunity (at least) to be executed. Any process will request to enter its critical section at least once. Any process executing its critical section will exit it before other processes request to enter their critical sections. At any one time, only one process is executing its non-critical section",
+    "answers": [
+      {"id": 1, "answer": "0", "correct": false},
+      {"id": 2, "answer": "1", "correct": true},
+      {"id": 3, "answer": "2", "correct": false},
+      {"id": 4, "answer": "3", "correct": false}
+    ]
+  },
+  {
+    "id": 21,
+    "question": "An interleaving of instructions that leads to an incorrect update of a shared variable is a",
+    "answers": [
+      {"id": 1, "answer": "Deadlock", "correct": false},
+      {"id": 2, "answer": "Race condition", "correct": true},
+      {"id": 3, "answer": "Critical Section", "correct": false},
+      {"id": 4, "answer": "None of the above", "correct": false}
+    ]
+  },
+  {
+    "id": 22,
+    "question": "How many of the following invocations ALWAYS block the invoker: Invoking wait (acquire in Java) on a semaphore. Invoking waitC (await in Java) on a monitor condition. Invoking lock on a lock. Invoking compareAndSet in an AtomicInteger",
+    "answers": [
+      {"id": 1, "answer": "0", "correct": false},
+      {"id": 2, "answer": "1", "correct": true},
+      {"id": 3, "answer": "2", "correct": false},
+      {"id": 4, "answer": "More than 2", "correct": false}
+    ]
+  },
+  {
+    "id": 23,
+    "question": "How many of the following operations may have no effect whatsoever: Invoking signal (acquire in Java) on a general semaphore. Invoking signalC (signal in Java) on a monitor condition. Invoking unlock on a lock",
+    "answers": [
+      {"id": 1, "answer": "0", "correct": false},
+      {"id": 2, "answer": "1", "correct": true},
+      {"id": 3, "answer": "2", "correct": false},
+      {"id": 4, "answer": "3", "correct": false}
+    ]
+  },
+  {
+    "id": 24,
+    "question": "C/S is an asynchronous distributed pattern. Here, asynchronous means...",
+    "answers": [
+      {"id": 1, "answer": "Receive operations never block the receiver. Send operations may block the sender", "correct": false},
+      {"id": 2, "answer": "Send operations never block the sender. Receive operations may block the receiver", "correct": true},
+      {"id": 3, "answer": "Both receive and send may block the invoker.", "correct": false},
+      {"id": 4, "answer": "None of the above", "correct": false}
+    ]
+  },
+  {
+    "id": 25,
+    "question": "Which of the following assertions is/are true? A1: in a single-processor environment, concurrent processes may overlap their instructions. A2: in a multi-processor environment, concurrent processes may interleave their instructions. A3: in a multi-processor environment, concurrent processes always overlap their instructions.",
+    "answers": [
+      {"id": 1, "answer": "All of them.", "correct": false},
+      {"id": 2, "answer": "A1 and A2", "correct": false},
+      {"id": 3, "answer": "A2 and A3", "correct": false},
+      {"id": 4, "answer": "Only A2", "correct": true}
+    ]
+  },
+  {
+    "id": 26,
+    "question": "Which of the following assertions is/are true? A1: the concurrent update problem is an example of starvation. A2: for a scheduler to be fair it must prioritize processes that have been waiting the longest time. A3: Mutual Exclusion is a type of serialization.",
+    "answers": [
+      {"id": 1, "answer": "The three of them", "correct": false},
+      {"id": 2, "answer": "None", "correct": true},
+      {"id": 3, "answer": "A1 and A3", "correct": false},
+      {"id": 4, "answer": "Only A3", "correct": false}
+    ]
+  },
+  {
+    "id": 27,
+    "question": "Which is true:",
+    "answers": [
+      {"id": 1, "answer": "In a single-processor environment, non-determinism can cause a concurrent program to yield different results in different executions that take the same input data.", "correct": true},
+      {"id": 2, "answer": "Non-determinism causes correct programs yield incorrect results.", "correct": false},
+      {"id": 3, "answer": "Non-determinism only happens in multiple-processor environments.", "correct": false},
+      {"id": 4, "answer": "None", "correct": false}
+    ]
+  },
+  {
+    "id": 28,
+    "question": "In java, how many of the following methods defined in class Thread are instance methods sleep(), yield(), join()",
+    "answers": [
+      {"id": 1, "answer": "0", "correct": false},
+      {"id": 2, "answer": "1", "correct": true},
+      {"id": 3, "answer": "2", "correct": false},
+      {"id": 4, "answer": "3", "correct": false}
+    ]
+  },
+  {
+    "id": 29,
+    "question": "Which is true of a MESA-Style monitor",
+    "answers": [
+      {"id": 1, "answer": "When a process invokes the signalC operation on a condition, it immediately releases the lock", "correct": false},
+      {"id": 2, "answer": "When a process invokes the waitC operation on a condition, it is not blocked if the condition is true", "correct": false},
+      {"id": 3, "answer": "When a process invokes the waitC operation on a condition, it immediately releases the lock", "correct": true},
+      {"id": 4, "answer": "None of the above", "correct": false}
+    ]
+  },
+  {
+    "id": 30,
+    "question": "Which is true regarding the channel-based client/server pattern",
+    "answers": [
+      {"id": 1, "answer": "It's symmetrical with regard to naming and synchronous with regard to message passing.", "correct": false},
+      {"id": 2, "answer": "It's asymmetrical with regard to naming and synchronous with regard to message passing.", "correct": false},
+      {"id": 3, "answer": "It's symmetrical with regard to naming and asynchronous with regard to message passing.", "correct": false},
+      {"id": 4, "answer": "It's asymmetrical with regard to naming and asynchronous with regard to message passing.", "correct": true}
+    ]
+  },
+  {
+    "id": 31,
+    "question": "In Java RMI",
+    "answers": [
+      {"id": 1, "answer": "Both the stub and the skeleton must implement the same interface (extending from Remote)", "correct": false},
+      {"id": 2, "answer": "Both the stub and the server object must implement the same interface (extending from Remote)", "correct": true},
+      {"id": 3, "answer": "Both the client object and the skeleton must implement the same interface (extending from remote)", "correct": false},
+      {"id": 4, "answer": "None of the above", "correct": false}
+    ]
+  },
+  {
+    "id": 32,
+    "question": "In Java RMI, which of the four components (client, server, skeleton and stub) are responsible of performing marshalling and unmarshalling operations?",
+    "answers": [
+      {"id": 1, "answer": "Only the client and the server.", "correct": false},
+      {"id": 2, "answer": "Only the server and the stub.", "correct": false},
+      {"id": 3, "answer": "Only the skeleton and the client.", "correct": false},
+      {"id": 4, "answer": "None of the above", "correct": true}
+    ]
+  }
+    ]
+}
