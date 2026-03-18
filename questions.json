@@ -338,6 +338,67 @@
       {"id": 4, "answer": "O1 and O4", "correct": false}
     ],
     "imgfile":"./images/tema1ex33.png"
+  },
+  {
+    "id": 34,
+    "question": "Which of the following assertions is/are true?",
+    "answers": [
+      {"id": 1, "answer": "The three of them", "correct": false},
+      {"id": 2, "answer": "None", "correct": true},
+      {"id": 3, "answer": "A1 and A3", "correct": false},
+      {"id": 4, "answer": "Only A3", "correct": false}
+    ],
+    "imgfile":"./images/tema1ex34.png"
+  },
+  {
+    "id": 35,
+    "question": "“Once a process has requested to enter the critical section, there’s a maximum amount of times other processes are allowed to enter the critical sections before the request is granted”",
+    "answers": [
+      {"id": 1, "answer": "This is a correctness property of the critical section that guarantees freedom from individual starvation.", "correct": true},
+      {"id": 2, "answer": "This is a correctness property of the critical section problem that guarantees that the critical section will not remain empty if there is a process that has requested entering it.", "correct": false},
+      {"id": 3, "answer": "This is a correctness property of the critical section problem that is known as scheduler fairness.", "correct": false},
+      {"id": 4, "answer": "None of the above", "correct": false}
+    ]
+  },
+  {
+    "id": 36,
+    "question": "A test & set variable...",
+    "answers": [
+      {"id": 1, "answer": "Is owned by the last thread that checked its value", "correct": false},
+      {"id": 2, "answer": "Is owned by the last thread that changed (set) its value", "correct": false},
+      {"id": 3, "answer": "Is Owned by the last thread that found its value was the expected one and was then able to change it", "correct": false},
+      {"id": 4, "answer": "None of the above", "correct": true}
+    ]
+  },
+  {
+    "id": 37,
+    "question": "Which is true?",
+    "answers": [
+      {"id": 1, "answer": "Absence of interference is a safety property", "correct": true},
+      {"id": 2, "answer": "Absence starvation is a safety property", "correct": false},
+      {"id": 3, "answer": "Progress means that undesirable (erroneous states) are never reached", "correct": false},
+      {"id": 4, "answer": "None of the above.", "correct": false}
+    ]
+  },
+  {
+    "id": 38,
+    "question": "Which is true?",
+    "answers": [
+      {"id": 1, "answer": "Incremental acquisition prevents deadlock", "correct": false},
+      {"id": 2, "answer": "Circular wait is not necessary for deadlock to occur", "correct": false},
+      {"id": 3, "answer": "Deadlock cannot occur if resource allocation is managed with fair mechanisms (like fair semaphores or other fifo-managed synchronization tools)", "correct": false},
+      {"id": 4, "answer": "None of the above", "correct": true}
+    ]
+  },
+  {
+    "id": 39,
+    "question": "An asynchronous channel",
+    "answers": [
+      {"id": 1, "answer": "Blocks the sender if the receiver is not ready to receive", "correct": false},
+      {"id": 2, "answer": "Blocks the receiver if the sender is not ready to send", "correct": false},
+      {"id": 3, "answer": "Never blocks neither the sender nor the receiver", "correct": false},
+      {"id": 4, "answer": "None of the above", "correct": true}
+    ]
   }
     ]
 }
