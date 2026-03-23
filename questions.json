@@ -319,5 +319,343 @@
       {"id": 4, "answer": "None of the above", "correct": true}
     ]
   }
+    ],
+    "temaToF":[
+  {
+    "id": 1,
+    "question": "In a single-processor environment the processes of a parallel program may interleave or overlap their instructions and the final decision (regarding whether instructions interleave or overlap) is taken by the scheduler.",
+    "answers": [
+      {"id": 1, "answer": "True", "correct": false},
+      {"id": 2, "answer": "False", "correct": true}
+    ]
+  },
+  {
+    "id": 2,
+    "question": "Mutual exclusion guarantees that the order of execution of different tasks is always the same.",
+    "answers": [
+      {"id": 1, "answer": "True", "correct": false},
+      {"id": 2, "answer": "False", "correct": true}
+    ]
+  },
+  {
+    "id": 3,
+    "question": "Non-determinism can take place both in parallel (with several processors) and in concurrent environments (with a single processor).",
+    "answers": [
+      {"id": 1, "answer": "True", "correct": true},
+      {"id": 2, "answer": "False", "correct": false}
+    ]
+  },
+  {
+    "id": 4,
+    "question": "Mutual exclusion can be implemented with semaphores, locks and monitors but cannot be implemented with test & set variables.",
+    "answers": [
+      {"id": 1, "answer": "True", "correct": false},
+      {"id": 2, "answer": "False", "correct": true}
+    ]
+  },
+  {
+    "id": 5,
+    "question": "Two processes execute the same code, and this code reads a variable (the same variable for both processes). This code is never going to cause interference.",
+    "answers": [
+      {"id": 1, "answer": "True", "correct": true},
+      {"id": 2, "answer": "False", "correct": false}
+    ]
+  },
+  {
+    "id": 6,
+    "question": "Being starvation-free means that once a process has requested to enter the critical section, there is an upper limit for the times other processes will be granted access to this critical section.",
+    "answers": [
+      {"id": 1, "answer": "True", "correct": false},
+      {"id": 2, "answer": "False", "correct": true}
+    ]
+  },
+  {
+    "id": 7,
+    "question": "\"A process may crash while executing the pre-protocol\" is one of the assumptions of the critical section problem.",
+    "answers": [
+      {"id": 1, "answer": "True", "correct": false},
+      {"id": 2, "answer": "False", "correct": true}
+    ]
+  },
+  {
+    "id": 8,
+    "question": "An asynchronous channel may, in some circumstances, block the sender.",
+    "answers": [
+      {"id": 1, "answer": "True", "correct": false},
+      {"id": 2, "answer": "False", "correct": true}
+    ]
+  },
+  {
+    "id": 9,
+    "question": "In a client/server architecture, the server does not know the identity of the client(s) beforehand.",
+    "answers": [
+      {"id": 1, "answer": "True", "correct": true},
+      {"id": 2, "answer": "False", "correct": false}
+    ]
+  },
+  {
+    "id": 10,
+    "question": "In channel-based asynchronous message passing, the atomicity of the send and receive operations is not guaranteed.",
+    "answers": [
+      {"id": 1, "answer": "True", "correct": false},
+      {"id": 2, "answer": "False", "correct": true}
+    ]
+  },
+  {
+    "id": 11,
+    "question": "One of the advantages of thread pooling is that it avoids the risk of interference.",
+    "answers": [
+      {"id": 1, "answer": "True", "correct": false},
+      {"id": 2, "answer": "False", "correct": true}
+    ]
+  },
+  {
+    "id": 12,
+    "question": "The lock operation on a lock can only be invoked by the owner of the lock.",
+    "answers": [
+      {"id": 1, "answer": "True", "correct": false},
+      {"id": 2, "answer": "False", "correct": true}
+    ]
+  },
+  {
+    "id": 13,
+    "question": "In a MESA-style monitor, when a process invokes the signalC operation it owns the lock and does not release it.",
+    "answers": [
+      {"id": 1, "answer": "True", "correct": true},
+      {"id": 2, "answer": "False", "correct": false}
+    ]
+  },
+  {
+    "id": 14,
+    "question": "A system that avoids circular waiting avoids deadlock even if it does not avoid incremental acquisition.",
+    "answers": [
+      {"id": 1, "answer": "True", "correct": true},
+      {"id": 2, "answer": "False", "correct": false}
+    ]
+  },
+  {
+    "id": 15,
+    "question": "If critical sections are made non-interruptible (atomic), interference does not take place.",
+    "answers": [
+      {"id": 1, "answer": "True", "correct": true},
+      {"id": 2, "answer": "False", "correct": false}
+    ]
+  },
+  {
+    "id": 16,
+    "question": "In monitors, signalling when no process is waiting causes an error.",
+    "answers": [
+      {"id": 1, "answer": "True", "correct": false},
+      {"id": 2, "answer": "False", "correct": true}
+    ]
+  },
+  {
+    "id": 17,
+    "question": "\"The scheduler is fair\" means that there is an upper bound to the time a process is ready but not running.",
+    "answers": [
+      {"id": 1, "answer": "True", "correct": true},
+      {"id": 2, "answer": "False", "correct": false}
+    ]
+  },
+  {
+    "id": 18,
+    "question": "If a thread th1 invokes th2.stop() (th2 being a different thread) then th1 stops itself.",
+    "answers": [
+      {"id": 1, "answer": "True", "correct": false},
+      {"id": 2, "answer": "False", "correct": true}
+    ]
+  },
+  {
+    "id": 19,
+    "question": "A test-and-set variable is owned by the last process that set its value.",
+    "answers": [
+      {"id": 1, "answer": "True", "correct": false},
+      {"id": 2, "answer": "False", "correct": true}
+    ]
+  },
+  {
+    "id": 20,
+    "question": "A java socket is the implementation of a two-way synchronous channel.",
+    "answers": [
+      {"id": 1, "answer": "True", "correct": false},
+      {"id": 2, "answer": "False", "correct": true}
+    ]
+  },
+  {
+    "id": 21,
+    "question": "In a single-processor environment, non-determinism can cause a concurrent program to yield different results in different executions that take the same input data.",
+    "answers": [
+      {"id": 1, "answer": "True", "correct": true},
+      {"id": 2, "answer": "False", "correct": false}
+    ]
+  },
+  {
+    "id": 22,
+    "question": "In a single-processor system, if the scheduler could not move a process from the running state to any other state while that process is executing a critical section, then interference would not arise.",
+    "answers": [
+      {"id": 1, "answer": "True", "correct": true},
+      {"id": 2, "answer": "False", "correct": false}
+    ]
+  },
+  {
+    "id": 23,
+    "question": "In a multi-processor system, if the scheduler could not move a process from the running state to any other state while that process is executing a critical section, then interference would not arise.",
+    "answers": [
+      {"id": 1, "answer": "True", "correct": false},
+      {"id": 2, "answer": "False", "correct": true}
+    ]
+  },
+  {
+    "id": 24,
+    "question": "Thread pooling mechanisms are devised to help threads in sharing memory and exchanging messages.",
+    "answers": [
+      {"id": 1, "answer": "True", "correct": false},
+      {"id": 2, "answer": "False", "correct": true}
+    ]
+  },
+  {
+    "id": 25,
+    "question": "In java, volatile makes reading and writing simple-typed variables atomic.",
+    "answers": [
+      {"id": 1, "answer": "True", "correct": true},
+      {"id": 2, "answer": "False", "correct": false}
+    ]
+  },
+  {
+    "id": 26,
+    "question": "\"A process will not crash while in the critical section\" is one of the assumptions in the critical section problem.",
+    "answers": [
+      {"id": 1, "answer": "True", "correct": true},
+      {"id": 2, "answer": "False", "correct": false}
+    ]
+  },
+  {
+    "id": 27,
+    "question": "\"A process may crash while executing the pre-protocol\" is another of the assumptions in the critical section problem.",
+    "answers": [
+      {"id": 1, "answer": "True", "correct": false},
+      {"id": 2, "answer": "False", "correct": true}
+    ]
+  },
+  {
+    "id": 28,
+    "question": "\"The scheduler is fair\" means that every process in the ready state gets a chance to execute.",
+    "answers": [
+      {"id": 1, "answer": "True", "correct": true},
+      {"id": 2, "answer": "False", "correct": false}
+    ]
+  },
+  {
+    "id": 29,
+    "question": "\"Freedom from individual starvation\" means that any process requesting to enter the critical section must eventually succeed.",
+    "answers": [
+      {"id": 1, "answer": "True", "correct": true},
+      {"id": 2, "answer": "False", "correct": false}
+    ]
+  },
+  {
+    "id": 30,
+    "question": "In java, the compareAndSet method of AtomicIntger objects can only be invoked by the owner of the object.",
+    "answers": [
+      {"id": 1, "answer": "True", "correct": false},
+      {"id": 2, "answer": "False", "correct": true}
+    ]
+  },
+  {
+    "id": 31,
+    "question": "A re-entrant lock can only be released by its owner.",
+    "answers": [
+      {"id": 1, "answer": "True", "correct": true},
+      {"id": 2, "answer": "False", "correct": false}
+    ]
+  },
+  {
+    "id": 32,
+    "question": "In Mesa-style monitors, signalling a condition when no process is waiting in it causes an error.",
+    "answers": [
+      {"id": 1, "answer": "True", "correct": false},
+      {"id": 2, "answer": "False", "correct": true}
+    ]
+  },
+  {
+    "id": 33,
+    "question": "In Binary semaphores, signalling when no process is waiting in it causes an error.",
+    "answers": [
+      {"id": 1, "answer": "True", "correct": true},
+      {"id": 2, "answer": "False", "correct": false}
+    ]
+  },
+  {
+    "id": 34,
+    "question": "In Mesa-style-monitors, signalled processes have priority over processes waiting to enter the monitor.",
+    "answers": [
+      {"id": 1, "answer": "True", "correct": false},
+      {"id": 2, "answer": "False", "correct": true}
+    ]
+  },
+  {
+    "id": 35,
+    "question": "In Java Monitors (implemented with Lock and Condition objects), signalled threads have priority over processes waiting to enter the monitor.",
+    "answers": [
+      {"id": 1, "answer": "True", "correct": false},
+      {"id": 2, "answer": "False", "correct": true}
+    ]
+  },
+  {
+    "id": 36,
+    "question": "In Java Monitors (implemented using Lock and Condition objects), a \"spurious wakeup\" occurs when a thread that is waiting in a certain condition becomes ready to reacquire the lock, even though it has not been signalled by any other thread.",
+    "answers": [
+      {"id": 1, "answer": "True", "correct": true},
+      {"id": 2, "answer": "False", "correct": false}
+    ]
+  },
+  {
+    "id": 37,
+    "question": "If a concurrent program exhibits \"liveness\" then it is free from starvation",
+    "answers": [
+      {"id": 1, "answer": "True", "correct": true},
+      {"id": 2, "answer": "False", "correct": false}
+    ]
+  },
+  {
+    "id": 38,
+    "question": "Asynchronous channels are entirely non-blocking.",
+    "answers": [
+      {"id": 1, "answer": "True", "correct": false},
+      {"id": 2, "answer": "False", "correct": true}
+    ]
+  },
+  {
+    "id": 39,
+    "question": "Asynchronous channels must have a buffer of unread messages.",
+    "answers": [
+      {"id": 1, "answer": "True", "correct": true},
+      {"id": 2, "answer": "False", "correct": false}
+    ]
+  },
+  {
+    "id": 40,
+    "question": "The client/server pattern follows an asymmetrical naming approach.",
+    "answers": [
+      {"id": 1, "answer": "True", "correct": true},
+      {"id": 2, "answer": "False", "correct": false}
+    ]
+  },
+  {
+    "id": 41,
+    "question": "In client/server systems, \"Conversational continuity\" means that client can send several requests without having to establish a separate connection for each one.",
+    "answers": [
+      {"id": 1, "answer": "True", "correct": true},
+      {"id": 2, "answer": "False", "correct": false}
+    ]
+  },
+  {
+    "id": 42,
+    "question": "Java RMI is an implementation of a synchronous communication schema for distributed systems.",
+    "answers": [
+      {"id": 1, "answer": "True", "correct": true},
+      {"id": 2, "answer": "False", "correct": false}
+    ]
+  }
     ]
 }

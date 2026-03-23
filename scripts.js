@@ -1,5 +1,7 @@
 var tema1 = [];
 var tema1copy = [];
+var temaToF = [];
+var temaToFcopy = [];
 var j = [0, 1, 2, 3];
 
 const menu = document.getElementById("menu");
@@ -9,6 +11,10 @@ const popupBg = document.getElementById("popupBg");
 const correct = document.getElementById("correct");
 const wrong = document.getElementById("wrong");
 const footer = document.getElementById("footer");
+const answer1div = document.getElementById("answer1div");
+const answer2div = document.getElementById("answer2div");
+const answer3div = document.getElementById("answer3div");
+const answer4div = document.getElementById("answer4div");
 
 let currentQuestion;
 var selectedTema;
@@ -22,9 +28,8 @@ function nextQuestion() {
         remindOpen();
         return;
     }
-    unselect();
+
     resetImg();
-    firstAnswer = true;
 
     let qTitle = document.getElementById("questionText");
 
@@ -35,19 +40,35 @@ function nextQuestion() {
         }
         let n = Math.floor(Math.random() * tema1copy.length);
         currentQuestion = tema1copy.splice(n, 1)[0];
+    } else if (selectedTema === 2) {
+        if (temaToFcopy.length === 0) {
+            showFinished();
+            return;
+        }
+        let n = Math.floor(Math.random() * temaToFcopy.length);
+        currentQuestion = temaToFcopy.splice(n, 1)[0];
     }
 
-    if (currentQuestion.hasOwnProperty('imgfile') && currentQuestion.imgfile != "") {
-        document.getElementById("questionImage").style.display = "block";
+    if (currentQuestion.hasOwnProperty("imgfile") && currentQuestion.imgfile != "") {
+        document.getElementById("questionImage").classList.remove("hidden");
         document.getElementById("questionImg").src = currentQuestion.imgfile;
     }
 
     qTitle.innerHTML = currentQuestion.question;
-    j.sort(() => Math.random() - 0.5);
-    for (let i = 1; i < 5; i++) {
-        let answer = currentQuestion.answers[j[i - 1]].answer;
-        let a = document.getElementById("label" + i);
-        a.innerHTML = answer;
+
+    if(selectTema === 1){
+        j.sort(() => Math.random() - 0.5);
+        for (let i = 1; i < currentQuestion.answers.length+1; i++) {
+            let answer = currentQuestion.answers[j[i - 1]].answer;
+            let a = document.getElementById("label" + i);
+            a.innerHTML = answer;
+        }
+    } else {
+        for(let i = 1; i < currentQuestion.answers.length+1; i++) {
+            let answer = currentQuestion.answers[i - 1].answer;
+            let a = document.getElementById("label" + i);
+            a.innerHTML = answer;
+        }
     }
 
     var count = document.getElementById("counterText");
@@ -58,6 +79,8 @@ function nextQuestion() {
     count.innerHTML = correct + "/" + total;
 
     answered = false;
+    unselect();
+    firstAnswer = true;
 }
 
 $(document).ready(function () {
@@ -66,6 +89,7 @@ $(document).ready(function () {
         .then(response => response.json()) // Parse JSON response
         .then(data => {
             tema1 = data.tema1 || [];
+            temaToF = data.temaToF || [];
         })
         .catch(error => console.error("Error loading JSON:", error));
 });
@@ -75,7 +99,7 @@ function answer() {
     correct.classList.add("hidden");
     wrong.classList.add("hidden");
 
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < currentQuestion.answers.length; i++) {
         if (i === selectedAnswer) {
             if (currentQuestion.answers[j[i]].correct) {
                 correct.classList.remove("hidden");
@@ -105,7 +129,7 @@ function unselect() {
     correct.classList.add("hidden");
     wrong.classList.add("hidden");
     let answers = document.getElementsByName("answer");
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < currentQuestion.answers.length; i++) {
         answers[i].checked = false;
     }
 }
@@ -117,6 +141,7 @@ function resetCounter() {
 
 function resetQuestions() {
     tema1copy = tema1.slice();
+    temaToFcopy = temaToF.slice();
 }
 
 function selectTema(tema) {
@@ -124,6 +149,12 @@ function selectTema(tema) {
     testMenu.classList.remove("hidden");
     menu.classList.add("hidden");
     footer.classList.add("hidden");
+    answer1div.classList.remove("hidden");
+    answer2div.classList.remove("hidden");
+    if(selectedTema === 1) {
+        answer3div.classList.remove("hidden");
+        answer4div.classList.remove("hidden");
+    }
     resetQuestions();
     nextQuestion();
     answered = false;
@@ -135,6 +166,12 @@ function tornarMenu() {
     popupBg.classList.add("hidden");
     menu.classList.remove("hidden");
     footer.classList.remove("hidden");
+    answer1div.classList.add("hidden");
+    answer2div.classList.add("hidden");
+    if(selectedTema === 1) {
+        answer3div.classList.add("hidden");
+        answer4div.classList.add("hidden");
+    }
     resetCounter();
     remindClose();
     answered = true;
@@ -147,7 +184,7 @@ function isChecked() {
         return;
     }
 
-    for (let i = 1; i < 5; i++) {
+    for (let i = 1; i < currentQuestion.answers.length+1; i++) {
         let answer = document.getElementById("answer" + i);
         if (answer.checked) {
             selectedAnswer = i - 1;
@@ -188,6 +225,6 @@ function remindClose() {
 }
 
 function resetImg() {
-    document.getElementById("questionImage").style.display = "none";
+    document.getElementById("questionImage").classList.add("hidden");
     document.getElementById("questionImg").src = "";
 }
